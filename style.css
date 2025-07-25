@@ -47,6 +47,12 @@ header .logo {
     color: #2c4a2b;
 }
 
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 button {
     background-color: #25D366;
     color: white;
@@ -57,6 +63,10 @@ button {
     font-weight: bold;
 }
 
+button.secundario {
+    background-color: #3b82f6;
+}
+
 button:hover {
-    background-color: #1ebe5d;
+    opacity: 0.9;
 }
