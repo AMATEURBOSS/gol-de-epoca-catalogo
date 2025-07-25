@@ -14,9 +14,10 @@ header {
 }
 
 header .logo {
-    width: 100px;
+    width: 140px; /* or try 150px if you want it bolder */
     border-radius: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    transition: all 0.2s ease-in-out;
 }
 
 .buscador {
