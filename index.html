@@ -12,6 +12,11 @@
     <p>Pasión que nunca pasa de moda</p>
 </header>
 
+<div class="buscador">
+    <input type="text" id="searchInput" placeholder="Buscar camiseta..." onkeyup="filtrarCatalogo()">
+</div>
+
+
 <section class="catalogo">
 
     <div class="producto">
@@ -357,6 +362,16 @@
     function cambiarPerspectiva(id, front, back) {
         const img = document.getElementById(id);
         img.src = img.src.includes(front) ? back : front;
+    }
+
+    function filtrarCatalogo() {
+        const input = document.getElementById("searchInput").value.toLowerCase();
+        const productos = document.getElementsByClassName("producto");
+
+        for (let i = 0; i < productos.length; i++) {
+            const nombre = productos[i].querySelector("h3").textContent.toLowerCase();
+            productos[i].style.display = nombre.includes(input) ? "" : "none";
+        }
     }
 </script>
 </body>
