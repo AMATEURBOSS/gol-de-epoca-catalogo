@@ -39,6 +39,7 @@ header .logo {
     border-radius: 8px;
     object-fit: cover;
     margin-bottom: 10px;
+    transition: all 0.2s ease-in-out;
 }
 
 .producto h3 {
@@ -50,7 +51,9 @@ header .logo {
 .botones {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
@@ -61,6 +64,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    width: 90%;
 }
 
 button.secundario {
