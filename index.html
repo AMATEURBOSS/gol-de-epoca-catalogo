@@ -1,447 +1,330 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8"/>
     <title>Catálogo Gol de Época</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
 <header>
-    <img src="img/logo.jpg" alt="Gol de Época Logo" class="logo">
+    <img alt="Gol de Época Logo" class="logo" src="img/logo.jpg"/>
     <h1>Catálogo Gol de Época</h1>
     <p>Pasión que nunca pasa de moda</p>
 </header>
-
 <div class="buscador">
-    <input type="text" id="searchInput" placeholder="Buscar camiseta..." onkeyup="filtrarCatalogo()">
+    <input id="searchInput" onkeyup="filtrarCatalogo()" placeholder="Buscar camiseta..." type="text"/>
 </div>
-
-
 <section class="catalogo">
-
     <div class="producto">
-        <img src="img/player-25-26-real-madrid-us-pack-baseball-jersey-front.jpg"
-             alt="Player Version 25/26 Real Madrid US Pack Baseball Jersey"
-             class="camiseta"
-             id="real-us-pack">
-        <h3>Player Version 25/26 Real Madrid US Pack Baseball Jersey</h3>
+        <img alt="Player Version 25/26 Real Madrid US Pack Baseball Jersey" class="camiseta" id="real-us-pack" src="img/player-25-26-real-madrid-us-pack-baseball-jersey-front.jpg"/>
+        <h3>Player Version 25/26 Real Madrid US Pack Baseball Jersey</h3><p class="precio">Precio: $750 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Real%20Madrid%20Away%20Long%20Sleeve%20Jersey">
                 <button class="boton-icono">
-                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
                 </button>
-
             </a>
-
-            <button class="secundario"
-                    onclick="cambiarPerspectiva('real-us-pack',
+            <button class="secundario" onclick="cambiarPerspectiva('real-us-pack',
             'img/player-25-26-real-madrid-us-pack-baseball-jersey-front.jpg',
             'img/player-25-26-real-madrid-us-pack-baseball-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
     <div class="producto">
-        <img src="img/player-25-26-real-madrid-away-jersey-front.jpg"
-             alt="Player Version 25/26 Real Madrid Away Jersey"
-             class="camiseta"
-             id="real-away">
-        <h3>Player Version 25/26 Real Madrid Away Jersey</h3>
+        <img alt="Player Version 25/26 Real Madrid Away Jersey" class="camiseta" id="real-away" src="img/player-25-26-real-madrid-away-jersey-front.jpg"/>
+        <h3>Player Version 25/26 Real Madrid Away Jersey</h3><p class="precio">Precio: $750 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Real%20Madrid%20Away%20Jersey">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
-            <button class="secundario"
-                    onclick="cambiarPerspectiva('real-away',
+            <button class="secundario" onclick="cambiarPerspectiva('real-away',
             'img/player-25-26-real-madrid-away-jersey-front.jpg',
             'img/player-25-26-real-madrid-away-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
     <div class="producto">
-        <img src="img/player-25-26-real-madrid-away-long-sleeve-jersey-front.jpg"
-             alt="Player Version 25/26 Real Madrid Away Long Sleeve Jersey"
-             class="camiseta"
-             id="real-away-ls">
-        <h3>Player Version 25/26 Real Madrid Away Long Sleeve Jersey</h3>
+        <img alt="Player Version 25/26 Real Madrid Away Long Sleeve Jersey" class="camiseta" id="real-away-ls" src="img/player-25-26-real-madrid-away-long-sleeve-jersey-front.jpg"/>
+        <h3>Player Version 25/26 Real Madrid Away Long Sleeve Jersey</h3><p class="precio">Precio: $800 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Real%20Madrid%20Away%20Long%20Sleeve%20Jersey">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
-            <button class="secundario"
-                    onclick="cambiarPerspectiva('real-away-ls',
+            <button class="secundario" onclick="cambiarPerspectiva('real-away-ls',
             'img/player-25-26-real-madrid-away-long-sleeve-jersey-front.jpg',
             'img/player-25-26-real-madrid-away-long-sleeve-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
-
     <div class="producto">
-        <img src="img/player-25-26-real-madrid-home-jersey-front.jpg"
-             alt="Player Version 25/26 Real Madrid Home Jersey"
-             class="camiseta"
-             id="real-home">
-        <h3>Player Version 25/26 Real Madrid Home Jersey</h3>
+        <img alt="Player Version 25/26 Real Madrid Home Jersey" class="camiseta" id="real-home" src="img/player-25-26-real-madrid-home-jersey-front.jpg"/>
+        <h3>Player Version 25/26 Real Madrid Home Jersey</h3><p class="precio">Precio: $750 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Real%20Madrid%20Home%20Jersey">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
-            <button class="secundario"
-                    onclick="cambiarPerspectiva('real-home',
+            <button class="secundario" onclick="cambiarPerspectiva('real-home',
             'img/player-25-26-real-madrid-home-jersey-front.jpg',
             'img/player-25-26-real-madrid-home-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
     <div class="producto">
-        <img src="img/2025-26-player-version-real-madrid-home-long-sleeves-jersey-front.jpg"
-             alt="2025/26 Player Version Real Madrid Home Long Sleeves Jersey"
-             class="camiseta"
-             id="real-home-ls">
-        <h3>2025/26 Player Version Real Madrid Home Long Sleeves Jersey</h3>
+        <img alt="2025/26 Player Version Real Madrid Home Long Sleeves Jersey" class="camiseta" id="real-home-ls" src="img/2025-26-player-version-real-madrid-home-long-sleeves-jersey-front.jpg"/>
+        <h3>2025/26 Player Version Real Madrid Home Long Sleeves Jersey</h3><p class="precio">Precio: $800 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%202025/26%20Player%20Version%20Real%20Madrid%20Home%20Long%20Sleeves%20Jersey">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
-            <button class="secundario"
-                    onclick="cambiarPerspectiva('real-home-ls',
+            <button class="secundario" onclick="cambiarPerspectiva('real-home-ls',
             'img/2025-26-player-version-real-madrid-home-long-sleeves-jersey-front.jpg',
             'img/2025-26-player-version-real-madrid-home-long-sleeves-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
-
     <div class="producto">
-        <img src="img/player-25-26-barcelona-home-jersey-front.jpg"
-             alt="Player Version 25/26 Barcelona Home Jersey"
-             class="camiseta"
-             id="barca-home">
-        <h3>Player Version 25/26 Barcelona Home Jersey</h3>
+        <img alt="Player Version 25/26 Barcelona Home Jersey" class="camiseta" id="barca-home" src="img/player-25-26-barcelona-home-jersey-front.jpg"/>
+        <h3>Player Version 25/26 Barcelona Home Jersey</h3><p class="precio">Precio: $750 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Barcelona%20Home%20Jersey">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
-            <button class="secundario"
-                    onclick="cambiarPerspectiva('barca-home',
+            <button class="secundario" onclick="cambiarPerspectiva('barca-home',
             'img/player-25-26-barcelona-home-jersey-front.jpg',
             'img/player-25-26-barcelona-home-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
     <div class="producto">
-        <img src="img/player-24-25-barcelona-x-travis-scott-away-jersey-front.jpg"
-             alt="Player Version 24/25 Barcelona x Travis Scott Away Jersey"
-             class="camiseta"
-             id="barca-travis-away">
-        <h3>Player Version 24/25 Barcelona x Travis Scott Away Jersey</h3>
+        <img alt="Player Version 24/25 Barcelona x Travis Scott Away Jersey" class="camiseta" id="barca-travis-away" src="img/player-24-25-barcelona-x-travis-scott-away-jersey-front.jpg"/>
+        <h3>Player Version 24/25 Barcelona x Travis Scott Away Jersey</h3><p class="precio">Precio: $750 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2024/25%20Barcelona%20x%20Travis%20Scott%20Away%20Jersey">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
-            <button class="secundario"
-                    onclick="cambiarPerspectiva('barca-travis-away',
+            <button class="secundario" onclick="cambiarPerspectiva('barca-travis-away',
             'img/player-24-25-barcelona-x-travis-scott-away-jersey-front.jpg',
             'img/player-24-25-barcelona-x-travis-scott-away-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
     <div class="producto">
-        <img src="img/player-2025-mexico-gold-cup-special-jersey-front.jpg"
-             alt="Player Version 2025 Mexico Gold Cup Special Jersey"
-             class="camiseta"
-             id="mexico-gold-cup">
-        <h3>Player Version 2025 Mexico Gold Cup Special Jersey</h3>
+        <img alt="Player Version 2025 Mexico Gold Cup Special Jersey" class="camiseta" id="mexico-gold-cup" src="img/player-2025-mexico-gold-cup-special-jersey-front.jpg"/>
+        <h3>Player Version 2025 Mexico Gold Cup Special Jersey</h3><p class="precio">Precio: $750 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%202025%20Mexico%20Gold%20Cup%20Special%20Jersey">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
-            <button class="secundario"
-                    onclick="cambiarPerspectiva('mexico-gold-cup',
+            <button class="secundario" onclick="cambiarPerspectiva('mexico-gold-cup',
             'img/player-2025-mexico-gold-cup-special-jersey-front.jpg',
             'img/player-2025-mexico-gold-cup-special-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
     <div class="producto">
-        <img src="img/player-2025-mexico-gold-cup-long-sleeve-special-jersey-front.jpg"
-             alt="Player Version 2025 Mexico Gold Cup Long Sleeve Special Jersey"
-             class="camiseta"
-             id="mexico-gold-cup-ls">
-        <h3>Player Version 2025 Mexico Gold Cup Long Sleeve Special Jersey</h3>
+        <img alt="Player Version 2025 Mexico Gold Cup Long Sleeve Special Jersey" class="camiseta" id="mexico-gold-cup-ls" src="img/player-2025-mexico-gold-cup-long-sleeve-special-jersey-front.jpg"/>
+        <h3>Player Version 2025 Mexico Gold Cup Long Sleeve Special Jersey</h3><p class="precio">Precio: $800 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%202025%20Mexico%20Gold%20Cup%20Long%20Sleeve%20Special%20Jersey">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
-            <button class="secundario"
-                    onclick="cambiarPerspectiva('mexico-gold-cup-ls',
+            <button class="secundario" onclick="cambiarPerspectiva('mexico-gold-cup-ls',
             'img/player-2025-mexico-gold-cup-long-sleeve-special-jersey-front.jpg',
             'img/player-2025-mexico-gold-cup-long-sleeve-special-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
     <div class="producto">
-        <img src="img/player-25-26-chivas-guadalajara-home-jersey-front.jpg"
-             alt="Player Version 25/26 Chivas Guadalajara Home Jersey"
-             class="camiseta"
-             id="chivas-home">
-        <h3>Player Version 25/26 Chivas Guadalajara Home Jersey</h3>
+        <img alt="Player Version 25/26 Chivas Guadalajara Home Jersey" class="camiseta" id="chivas-home" src="img/player-25-26-chivas-guadalajara-home-jersey-front.jpg"/>
+        <h3>Player Version 25/26 Chivas Guadalajara Home Jersey</h3><p class="precio">Precio: $750 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Chivas%20Guadalajara%20Home%20Jersey">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
-            <button class="secundario"
-                    onclick="cambiarPerspectiva('chivas-home',
+            <button class="secundario" onclick="cambiarPerspectiva('chivas-home',
             'img/player-25-26-chivas-guadalajara-home-jersey-front.jpg',
             'img/player-25-26-chivas-guadalajara-home-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
     <div class="producto">
-        <img src="img/retro-96-97-chivas-guadalajara-away-jersey-front.jpg"
-             alt="Retro 96/97 Chivas Guadalajara Away Jersey"
-             class="camiseta"
-             id="chivas-retro-away">
-        <h3>Retro 96/97 Chivas Guadalajara Away Jersey</h3>
+        <img alt="Retro 96/97 Chivas Guadalajara Away Jersey" class="camiseta" id="chivas-retro-away" src="img/retro-96-97-chivas-guadalajara-away-jersey-front.jpg"/>
+        <h3>Retro 96/97 Chivas Guadalajara Away Jersey</h3><p class="precio">Precio: $800 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Retro%2096/97%20Chivas%20Guadalajara%20Away%20Jersey">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
-            <button class="secundario"
-                    onclick="cambiarPerspectiva('chivas-retro-away',
+            <button class="secundario" onclick="cambiarPerspectiva('chivas-retro-away',
             'img/retro-96-97-chivas-guadalajara-away-jersey-front.jpg',
             'img/retro-96-97-chivas-guadalajara-away-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
     <div class="producto">
-        <img src="img/24-25-club-america-home-special-jersey-front.jpg"
-             alt="24/25 Club América Home Special Jersey"
-             class="camiseta"
-             id="america-home-special">
-        <h3>24/25 Club América Home Special Jersey</h3>
+        <img alt="24/25 Club América Home Special Jersey" class="camiseta" id="america-home-special" src="img/24-25-club-america-home-special-jersey-front.jpg"/>
+        <h3>24/25 Club América Home Special Jersey</h3><p class="precio">Precio: $750 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2024/25%20Club%20América%20Home%20Special%20Jersey">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
-            <button class="secundario"
-                    onclick="cambiarPerspectiva('america-home-special',
+            <button class="secundario" onclick="cambiarPerspectiva('america-home-special',
             'img/24-25-club-america-home-special-jersey-front.jpg',
             'img/24-25-club-america-home-special-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
     <div class="producto">
-        <img src="img/2025-26-club-america-home-jersey-front.jpg"
-             alt="2025/26 Club América Home Jersey"
-             class="camiseta"
-             id="america-home-25-26">
-        <h3>2025/26 Club América Home Jersey</h3>
+        <img alt="2025/26 Club América Home Jersey" class="camiseta" id="america-home-25-26" src="img/2025-26-club-america-home-jersey-front.jpg"/>
+        <h3>2025/26 Club América Home Jersey</h3><p class="precio">Precio: $750 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%202025/26%20Club%20América%20Home%20Jersey">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
-            <button class="secundario"
-                    onclick="cambiarPerspectiva('america-home-25-26',
+            <button class="secundario" onclick="cambiarPerspectiva('america-home-25-26',
             'img/2025-26-club-america-home-jersey-front.jpg',
             'img/2025-26-club-america-home-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
     <div class="producto">
-        <img src="img/player-25-26-napoli-ea7-gray-with-robotic-armor-pattern-jersey-front.jpg" alt="Player Version 25/26 Napoli EA7 Gray" class="camiseta" id="napoli-gray">
-        <h3>Player Version 25/26 Napoli EA7 Gray</h3>
+        <img alt="Player Version 25/26 Napoli EA7 Gray" class="camiseta" id="napoli-gray" src="img/player-25-26-napoli-ea7-gray-with-robotic-armor-pattern-jersey-front.jpg"/>
+        <h3>Player Version 25/26 Napoli EA7 Gray</h3><p class="precio">Precio: $750 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Napoli%20EA7%20Gray">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
             <button class="secundario" onclick="cambiarPerspectiva('napoli-gray', 'img/player-25-26-napoli-ea7-gray-with-robotic-armor-pattern-jersey-front.jpg', 'img/player-25-26-napoli-ea7-gray-with-robotic-armor-pattern-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
     <div class="producto">
-        <img src="img/25-26-bologna-home-jersey-front.jpg" alt="25/26 Bologna Home Jersey" class="camiseta" id="bologna-home">
-        <h3>25/26 Bologna Home Jersey</h3>
+        <img alt="25/26 Bologna Home Jersey" class="camiseta" id="bologna-home" src="img/25-26-bologna-home-jersey-front.jpg"/>
+        <h3>25/26 Bologna Home Jersey</h3><p class="precio">Precio: $750 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2025/26%20Bologna%20Home%20Jersey">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
             <button class="secundario" onclick="cambiarPerspectiva('bologna-home', 'img/25-26-bologna-home-jersey-front.jpg', 'img/25-26-bologna-home-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
     <div class="producto">
-        <img src="img/25-26-napoli-home-jersey-front.jpg" alt="25/26 Napoli Home Jersey" class="camiseta" id="napoli-home">
-        <h3>25/26 Napoli Home Jersey</h3>
+        <img alt="25/26 Napoli Home Jersey" class="camiseta" id="napoli-home" src="img/25-26-napoli-home-jersey-front.jpg"/>
+        <h3>25/26 Napoli Home Jersey</h3><p class="precio">Precio: $750 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2025/26%20Napoli%20Home%20Jersey">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
             <button class="secundario" onclick="cambiarPerspectiva('napoli-home', 'img/25-26-napoli-home-jersey-front.jpg', 'img/25-26-napoli-home-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
     <div class="producto">
-        <img src="img/25-26-napoli-away-jersey-front.jpg" alt="25/26 Napoli Away Jersey" class="camiseta" id="napoli-away">
-        <h3>25/26 Napoli Away Jersey</h3>
+        <img alt="25/26 Napoli Away Jersey" class="camiseta" id="napoli-away" src="img/25-26-napoli-away-jersey-front.jpg"/>
+        <h3>25/26 Napoli Away Jersey</h3><p class="precio">Precio: $750 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2025/26%20Napoli%20Away%20Jersey">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
             <button class="secundario" onclick="cambiarPerspectiva('napoli-away', 'img/25-26-napoli-away-jersey-front.jpg', 'img/25-26-napoli-away-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
     <div class="producto">
-        <img src="img/25-26-inter-milan-home-shorts-front.jpg" alt="25/26 Inter Milan Home Shorts" class="camiseta" id="inter-home-shorts">
+        <img alt="25/26 Inter Milan Home Shorts" class="camiseta" id="inter-home-shorts" src="img/25-26-inter-milan-home-shorts-front.jpg"/>
         <h3>25/26 Inter Milan Home Shorts</h3>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2025/26%20Inter%20Milan%20Home%20Shorts">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
             <button class="secundario" onclick="cambiarPerspectiva('inter-home-shorts', 'img/25-26-inter-milan-home-shorts-front.jpg', 'img/25-26-inter-milan-home-shorts-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
     <div class="producto">
-        <img src="img/25-26-roma-home-jersey-front.jpg" alt="25/26 Roma Home Jersey" class="camiseta" id="roma-home">
-        <h3>25/26 Roma Home Jersey</h3>
+        <img alt="25/26 Roma Home Jersey" class="camiseta" id="roma-home" src="img/25-26-roma-home-jersey-front.jpg"/>
+        <h3>25/26 Roma Home Jersey</h3><p class="precio">Precio: $750 MXN</p>
         <div class="botones">
             <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2025/26%20Roma%20Home%20Jersey">
                 <button class="boton-icono">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
-</button>
-
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
             </a>
             <button class="secundario" onclick="cambiarPerspectiva('roma-home', 'img/25-26-roma-home-jersey-front.jpg', 'img/25-26-roma-home-jersey-back.jpg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
     <div class="producto">
-        <img src="img/retro-long-sleeve-07-08-manchester-united-champions-league-home-jersey-front.jpeg"
-             alt="Retro Long Sleeve 07/08 Manchester United Champions League Version Home Jersey"
-             class="camiseta"
-             id="manu-07-cl-home">
-
-        <h3>Retro Long Sleeve 07/08 Manchester United Champions League Version Home Jersey</h3>
-
+        <img alt="Retro Long Sleeve 07/08 Manchester United Champions League Version Home Jersey" class="camiseta" id="manu-07-cl-home" src="img/retro-long-sleeve-07-08-manchester-united-champions-league-home-jersey-front.jpeg"/>
+        <h3>Retro Long Sleeve 07/08 Manchester United Champions League Version Home Jersey</h3><p class="precio">Precio: $850 MXN</p>
         <div class="botones">
-            <a href="https://wa.me/523339724151?text=Hola,%20me%20interesa%20comprar%20la%20siguiente%20camiseta:%20Retro%20Long%20Sleeve%2007/08%20Manchester%20United%20Champions%20League%20Version%20Home%20Jersey"
-               target="_blank">
+            <a href="https://wa.me/523339724151?text=Hola,%20me%20interesa%20comprar%20la%20siguiente%20camiseta:%20Retro%20Long%20Sleeve%2007/08%20Manchester%20United%20Champions%20League%20Version%20Home%20Jersey" target="_blank">
                 <button class="boton-icono">
-                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
                 </button>
             </a>
-            <button class="secundario"
-                    onclick="cambiarPerspectiva('manu-07-cl-home',
+            <button class="secundario" onclick="cambiarPerspectiva('manu-07-cl-home',
         'img/retro-long-sleeve-07-08-manchester-united-champions-league-home-jersey-front.jpeg',
         'img/retro-long-sleeve-07-08-manchester-united-champions-league-home-jersey-back.jpeg')">
                 Cambiar Perspectiva
             </button>
         </div>
     </div>
-
-
-
 </section>
-
 <script>
     function cambiarPerspectiva(id, front, back) {
         const img = document.getElementById(id);
