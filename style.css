@@ -207,3 +207,8 @@ button.secundario:hover {
         min-height: 420px;
     }
 }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
