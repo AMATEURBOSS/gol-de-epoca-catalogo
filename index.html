@@ -30,8 +30,12 @@
     <p>Pasión que nunca pasa de moda</p>
 </header>
 <div class="buscador">
-    <input id="searchInput" onkeyup="filtrarCatalogo()" placeholder="Buscar camiseta..." type="text"/>
+    <div class="search-wrapper">
+        <input type="text" id="searchInput" placeholder="Buscar camiseta...">
+        <img src="img/search-icon.svg" alt="Buscar" class="search-icon">
+    </div>
 </div>
+
 <section class="catalogo">
     <div class="producto">
         <img alt="Player Version 25/26 Real Madrid US Pack Baseball Jersey" class="camiseta" id="real-us-pack" src="img/player-25-26-real-madrid-us-pack-baseball-jersey-front.jpg"/>
