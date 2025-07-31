@@ -24,17 +24,20 @@
     </div>
 </footer>
 <body>
-<header>
-    <img alt="Gol de Época Logo" class="logo" src="img/logo.jpg"/>
-    <h1>Catálogo Gol de Época</h1>
-    <p>Pasión que nunca pasa de moda</p>
-</header>
-<div class="buscador">
-    <div class="search-wrapper">
-        <input type="text" id="searchInput" placeholder="Buscar camiseta...">
-        <img src="img/search-icon.svg" alt="Buscar" class="search-icon">
+<div class="sticky-header">
+    <header>
+        <img alt="Gol de Época Logo" class="logo" src="img/logo.jpg"/>
+        <h1>Catálogo Gol de Época</h1>
+        <p>Pasión que nunca pasa de moda</p>
+    </header>
+    <div class="buscador">
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" placeholder="Buscar camiseta..." onkeyup="filtrarCatalogo()">
+            <img src="img/search-icon.svg" alt="Buscar" class="search-icon">
+        </div>
     </div>
 </div>
+
 
 <section class="catalogo">
     <div class="producto">
