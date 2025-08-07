@@ -1445,6 +1445,22 @@
 
 
 </section>
+
+<!-- Floating Cart Button -->
+<div id="floatingCartBtn" onclick="toggleCart()">🛒 Ver Carrito</div>
+
+<!-- Cart Modal -->
+<div id="cartBox" class="cart-box">
+    <h3>Tu carrito</h3>
+    <ul id="cartItems"></ul>
+    <p id="totalAmount">Total: $0 MXN</p>
+    <p id="shippingNotice"></p>
+    <a id="checkoutBtn" href="#" target="_blank">
+        <button class="checkout">Pedir por WhatsApp</button>
+    </a>
+</div>
+
+
 <script>
     function cambiarPerspectiva(id, front, back) {
         const img = document.getElementById(id);
@@ -1461,5 +1477,6 @@
         }
     }
 </script>
+<script src="js/cart.js"></script>
 </body>
 </html>
