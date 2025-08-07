@@ -1445,6 +1445,7 @@
 
 
 </section>
+
 <script>
     function cambiarPerspectiva(id, front, back) {
         const img = document.getElementById(id);
@@ -1461,5 +1462,23 @@
         }
     }
 </script>
+
+<!-- 🛒 Cart Popup -->
+<div id="cartPopup" class="cart-popup">
+    <h2>🛒 Carrito</h2>
+    <ul id="cartItems"></ul>
+    <p id="totalAmount">Total: $0 MXN</p>
+    <p id="shippingNotice"></p>
+    <a id="checkoutBtn" href="#" target="_blank">
+        <button class="checkout-btn">Pedir por WhatsApp</button>
+    </a>
+</div>
+
+<!-- 🛒 Floating Button -->
+<button id="toggleCartBtn" class="toggle-cart-btn">🛒</button>
+
+<!-- 🧠 Shopping Cart Logic (must be last!) -->
+<script src="js/cart.js"></script>
+
 </body>
 </html>
