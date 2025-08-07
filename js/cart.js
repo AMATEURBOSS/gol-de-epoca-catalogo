@@ -1,10 +1,17 @@
-
 let cart = [];
+
+// Load the sound effect
+const addSound = new Audio('sounds/cart-add.mp3');
+
 document.querySelectorAll('.agregar-carrito').forEach(button => {
     button.addEventListener('click', () => {
         const product = button.closest('.producto');
         const name = product.getAttribute('data-name');
         const price = parseInt(product.getAttribute('data-price'));
+
+        // Play sound when item is added
+        addSound.play();
+
         const existing = cart.find(item => item.name === name);
         if (existing) {
             existing.qty += 1;
