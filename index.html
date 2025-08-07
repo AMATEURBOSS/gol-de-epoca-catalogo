@@ -1,62 +1,1465 @@
-
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8"/>
     <title>Catálogo Gol de Época</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="js/cart.js" defer></script>
+    <link href="style.css" rel="stylesheet"/>
 </head>
+<footer class="footer">
+    <div class="envio-banner">
+        <p>🚚 <strong>Política de Envíos</strong></p>
+        <ul>
+            <li>$200 MXN por pedido de 1 a 4 productos</li>
+            <li><strong>Envío GRATIS</strong> desde 5 productos</li>
+            <li>Envíos a toda la República Mexicana 🇲🇽</li>
+        </ul>
+    </div>
+
+    <div class="redes">
+        <a href="https://www.instagram.com/goldepoca?igsh=MXI5eWlqcWtvb2gzbw==" target="_blank" class="icono-instagram">
+            <img src="img/instagram-icon.png" alt="Instagram" class="ig-icon">
+            Síguenos en Instagram
+        </a>
+    </div>
+</footer>
 <body>
+<div class="sticky-header">
     <header>
-        <img src="img/logo.jpg" alt="Gol de Época Logo" class="logo" />
+        <img alt="Gol de Época Logo" class="logo" src="img/logo.jpg"/>
         <h1>Catálogo Gol de Época</h1>
         <p>Pasión que nunca pasa de moda</p>
     </header>
-
     <div class="buscador">
-        <input type="text" id="searchInput" placeholder="Buscar camiseta..." onkeyup="filtrarCatalogo()" />
-    </div>
-
-    <section class="catalogo">
-        <div class="producto" data-name="25/26 Liverpool Home Jersey" data-price="750">
-            <img src="img/25-26-liverpool-home-jersey-front.jpg" alt="25/26 Liverpool Home Jersey" class="camiseta" id="liverpool-home" />
-            <h3>25/26 Liverpool Home Jersey</h3>
-            <p class="precio">Precio: $750 MXN</p>
-            <div class="botones">
-                <button class="agregar-carrito">Agregar al carrito</button>
-                <button class="secundario" onclick="cambiarPerspectiva('liverpool-home','img/25-26-liverpool-home-jersey-front.jpg','img/25-26-liverpool-home-jersey-back.jpg')">
-                    Cambiar Perspectiva
-                </button>
-            </div>
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" placeholder="Buscar camiseta..." onkeyup="filtrarCatalogo()">
+            <img src="img/search-icon.svg" alt="Buscar" class="search-icon">
         </div>
-    </section>
+    </div>
+</div>
 
-    <div id="cartPopup" class="cart-popup">
-        <h2>🛒 Carrito de Compras</h2>
-        <ul id="cartItems"></ul>
-        <p id="totalAmount">Total: $0 MXN</p>
-        <p id="shippingNotice"></p>
-        <a id="checkoutBtn" href="#" target="_blank">
-            <button class="checkout-btn">Pedir por WhatsApp</button>
-        </a>
+
+<section class="catalogo">
+    <div class="producto">
+        <img alt="Player Version 25/26 Real Madrid US Pack Baseball Jersey" class="camiseta" id="real-us-pack" src="img/player-25-26-real-madrid-us-pack-baseball-jersey-front.jpg"/>
+        <h3>Player Version 25/26 Real Madrid US Pack Baseball Jersey</h3><p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Real%20Madrid%20Away%20Long%20Sleeve%20Jersey">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('real-us-pack',
+            'img/player-25-26-real-madrid-us-pack-baseball-jersey-front.jpg',
+            'img/player-25-26-real-madrid-us-pack-baseball-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="Player Version 25/26 Real Madrid Away Jersey" class="camiseta" id="real-away" src="img/player-25-26-real-madrid-away-jersey-front.jpg"/>
+        <h3>Player Version 25/26 Real Madrid Away Jersey</h3><p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Real%20Madrid%20Away%20Jersey">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('real-away',
+            'img/player-25-26-real-madrid-away-jersey-front.jpg',
+            'img/player-25-26-real-madrid-away-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="Player Version 25/26 Real Madrid Away Long Sleeve Jersey" class="camiseta" id="real-away-ls" src="img/player-25-26-real-madrid-away-long-sleeve-jersey-front.jpg"/>
+        <h3>Player Version 25/26 Real Madrid Away Long Sleeve Jersey</h3><p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Real%20Madrid%20Away%20Long%20Sleeve%20Jersey">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('real-away-ls',
+            'img/player-25-26-real-madrid-away-long-sleeve-jersey-front.jpg',
+            'img/player-25-26-real-madrid-away-long-sleeve-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="Player Version 25/26 Real Madrid Home Jersey" class="camiseta" id="real-home" src="img/player-25-26-real-madrid-home-jersey-front.jpg"/>
+        <h3>Player Version 25/26 Real Madrid Home Jersey</h3><p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Real%20Madrid%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('real-home',
+            'img/player-25-26-real-madrid-home-jersey-front.jpg',
+            'img/player-25-26-real-madrid-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="2025/26 Player Version Real Madrid Home Long Sleeves Jersey" class="camiseta" id="real-home-ls" src="img/2025-26-player-version-real-madrid-home-long-sleeves-jersey-front.jpg"/>
+        <h3>2025/26 Player Version Real Madrid Home Long Sleeves Jersey</h3><p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%202025/26%20Player%20Version%20Real%20Madrid%20Home%20Long%20Sleeves%20Jersey">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('real-home-ls',
+            'img/2025-26-player-version-real-madrid-home-long-sleeves-jersey-front.jpg',
+            'img/2025-26-player-version-real-madrid-home-long-sleeves-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="Player Version 25/26 Barcelona Home Jersey" class="camiseta" id="barca-home" src="img/player-25-26-barcelona-home-jersey-front.jpg"/>
+        <h3>Player Version 25/26 Barcelona Home Jersey</h3><p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Barcelona%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('barca-home',
+            'img/player-25-26-barcelona-home-jersey-front.jpg',
+            'img/player-25-26-barcelona-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="Player Version 24/25 Barcelona x Travis Scott Away Jersey" class="camiseta" id="barca-travis-away" src="img/player-24-25-barcelona-x-travis-scott-away-jersey-front.jpg"/>
+        <h3>Player Version 24/25 Barcelona x Travis Scott Away Jersey</h3><p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2024/25%20Barcelona%20x%20Travis%20Scott%20Away%20Jersey">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('barca-travis-away',
+            'img/player-24-25-barcelona-x-travis-scott-away-jersey-front.jpg',
+            'img/player-24-25-barcelona-x-travis-scott-away-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="Player Version 2025 Mexico Gold Cup Special Jersey" class="camiseta" id="mexico-gold-cup" src="img/player-2025-mexico-gold-cup-special-jersey-front.jpg"/>
+        <h3>Player Version 2025 Mexico Gold Cup Special Jersey</h3><p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%202025%20Mexico%20Gold%20Cup%20Special%20Jersey">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('mexico-gold-cup',
+            'img/player-2025-mexico-gold-cup-special-jersey-front.jpg',
+            'img/player-2025-mexico-gold-cup-special-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="Player Version 2025 Mexico Gold Cup Long Sleeve Special Jersey" class="camiseta" id="mexico-gold-cup-ls" src="img/player-2025-mexico-gold-cup-long-sleeve-special-jersey-front.jpg"/>
+        <h3>Player Version 2025 Mexico Gold Cup Long Sleeve Special Jersey</h3><p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%202025%20Mexico%20Gold%20Cup%20Long%20Sleeve%20Special%20Jersey">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('mexico-gold-cup-ls',
+            'img/player-2025-mexico-gold-cup-long-sleeve-special-jersey-front.jpg',
+            'img/player-2025-mexico-gold-cup-long-sleeve-special-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="Player Version 25/26 Chivas Guadalajara Home Jersey" class="camiseta" id="chivas-home" src="img/player-25-26-chivas-guadalajara-home-jersey-front.jpg"/>
+        <h3>Player Version 25/26 Chivas Guadalajara Home Jersey</h3><p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Chivas%20Guadalajara%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('chivas-home',
+            'img/player-25-26-chivas-guadalajara-home-jersey-front.jpg',
+            'img/player-25-26-chivas-guadalajara-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="Retro 96/97 Chivas Guadalajara Away Jersey" class="camiseta" id="chivas-retro-away" src="img/retro-96-97-chivas-guadalajara-away-jersey-front.jpg"/>
+        <h3>Retro 96/97 Chivas Guadalajara Away Jersey</h3><p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Retro%2096/97%20Chivas%20Guadalajara%20Away%20Jersey">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('chivas-retro-away',
+            'img/retro-96-97-chivas-guadalajara-away-jersey-front.jpg',
+            'img/retro-96-97-chivas-guadalajara-away-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="24/25 Club América Home Special Jersey" class="camiseta" id="america-home-special" src="img/24-25-club-america-home-special-jersey-front.jpg"/>
+        <h3>24/25 Club América Home Special Jersey</h3><p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2024/25%20Club%20América%20Home%20Special%20Jersey">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('america-home-special',
+            'img/24-25-club-america-home-special-jersey-front.jpg',
+            'img/24-25-club-america-home-special-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="2025/26 Club América Home Jersey" class="camiseta" id="america-home-25-26" src="img/2025-26-club-america-home-jersey-front.jpg"/>
+        <h3>2025/26 Club América Home Jersey</h3><p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%202025/26%20Club%20América%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('america-home-25-26',
+            'img/2025-26-club-america-home-jersey-front.jpg',
+            'img/2025-26-club-america-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="Player Version 25/26 Napoli EA7 Gray" class="camiseta" id="napoli-gray" src="img/player-25-26-napoli-ea7-gray-with-robotic-armor-pattern-jersey-front.jpg"/>
+        <h3>Player Version 25/26 Napoli EA7 Gray</h3><p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Napoli%20EA7%20Gray">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('napoli-gray', 'img/player-25-26-napoli-ea7-gray-with-robotic-armor-pattern-jersey-front.jpg', 'img/player-25-26-napoli-ea7-gray-with-robotic-armor-pattern-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="25/26 Bologna Home Jersey" class="camiseta" id="bologna-home" src="img/25-26-bologna-home-jersey-front.jpg"/>
+        <h3>25/26 Bologna Home Jersey</h3><p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2025/26%20Bologna%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('bologna-home', 'img/25-26-bologna-home-jersey-front.jpg', 'img/25-26-bologna-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="25/26 Napoli Home Jersey" class="camiseta" id="napoli-home" src="img/25-26-napoli-home-jersey-front.jpg"/>
+        <h3>25/26 Napoli Home Jersey</h3><p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2025/26%20Napoli%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('napoli-home', 'img/25-26-napoli-home-jersey-front.jpg', 'img/25-26-napoli-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="25/26 Napoli Away Jersey" class="camiseta" id="napoli-away" src="img/25-26-napoli-away-jersey-front.jpg"/>
+        <h3>25/26 Napoli Away Jersey</h3><p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2025/26%20Napoli%20Away%20Jersey">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('napoli-away', 'img/25-26-napoli-away-jersey-front.jpg', 'img/25-26-napoli-away-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="25/26 Roma Home Jersey" class="camiseta" id="roma-home" src="img/25-26-roma-home-jersey-front.jpg"/>
+        <h3>25/26 Roma Home Jersey</h3><p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2025/26%20Roma%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('roma-home', 'img/25-26-roma-home-jersey-front.jpg', 'img/25-26-roma-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img alt="Retro Long Sleeve 07/08 Manchester United Champions League Version Home Jersey" class="camiseta" id="manu-07-cl-home" src="img/retro-long-sleeve-07-08-manchester-united-champions-league-home-jersey-front.jpeg"/>
+        <h3>Retro Long Sleeve 07/08 Manchester United Champions League Version Home Jersey</h3><p class="precio">Precio: $850 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20me%20interesa%20comprar%20la%20siguiente%20camiseta:%20Retro%20Long%20Sleeve%2007/08%20Manchester%20United%20Champions%20League%20Version%20Home%20Jersey" target="_blank">
+                <button class="boton-icono">
+                    <img alt="WhatsApp" class="ws-icon" src="img/whatsapp-icon.png"/>
+                </button>
+            </a>
+            <button class="secundario" onclick="cambiarPerspectiva('manu-07-cl-home',
+        'img/retro-long-sleeve-07-08-manchester-united-champions-league-home-jersey-front.jpeg',
+        'img/retro-long-sleeve-07-08-manchester-united-champions-league-home-jersey-back.jpeg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img src="img/25-26-ac-milan-third-jersey-front.jpg"
+             alt="25/26 AC Milan THIRD Jersey"
+             class="camiseta"
+             id="milan-third">
+        <h3>25/26 AC Milan THIRD Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2025/26%20AC%20Milan%20THIRD%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('milan-third',
+        'img/25-26-ac-milan-third-jersey-front.jpg',
+        'img/25-26-ac-milan-third-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
     </div>
 
-    <button id="toggleCartBtn" class="toggle-cart-btn">🛒</button>
+    <div class="producto">
+        <img src="img/player-25-26-ac-milan-home-long-sleeve-jersey-front.jpg"
+             alt="Player Version 25/26 AC Milan Home Long Sleeve Jersey"
+             class="camiseta"
+             id="milan-home-ls">
+        <h3>Player Version 25/26 AC Milan Home Long Sleeve Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20AC%20Milan%20Home%20Long%20Sleeve%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('milan-home-ls',
+        'img/player-25-26-ac-milan-home-long-sleeve-jersey-front.jpg',
+        'img/player-25-26-ac-milan-home-long-sleeve-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
 
-    <script>
-        function cambiarPerspectiva(id, front, back) {
-            const img = document.getElementById(id);
-            img.src = img.src.includes(front) ? back : front;
+    <div class="producto">
+        <img src="img/retro-1998-spain-home-jersey-front.jpg"
+             alt="Retro 1998 Spain Home Jersey"
+             class="camiseta"
+             id="spain-1998-home">
+        <h3>Retro 1998 Spain Home Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Retro%201998%20Spain%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('spain-1998-home',
+        'img/retro-1998-spain-home-jersey-front.jpg',
+        'img/retro-1998-spain-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img src="img/retro-96-97-borussia-dortmund-cl-home-jersey-front.jpg"
+             alt="Retro 96/97 Borussia Dortmund CL Home Jersey"
+             class="camiseta"
+             id="dortmund-96-home">
+        <h3>Retro 96/97 Borussia Dortmund CL Home Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Retro%2096/97%20Borussia%20Dortmund%20CL%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('dortmund-96-home',
+        'img/retro-96-97-borussia-dortmund-cl-home-jersey-front.jpg',
+        'img/retro-96-97-borussia-dortmund-cl-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img src="img/retro-94-95-borussia-dortmund-home-yellow-jersey-front.jpg"
+             alt="Retro 94/95 Borussia Dortmund Home Yellow Jersey"
+             class="camiseta"
+             id="dortmund-94-home">
+        <h3>Retro 94/95 Borussia Dortmund Home Yellow Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Retro%2094/95%20Borussia%20Dortmund%20Home%20Yellow%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('dortmund-94-home',
+        'img/retro-94-95-borussia-dortmund-home-yellow-jersey-front.jpg',
+        'img/retro-94-95-borussia-dortmund-home-yellow-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img src="img/retro-95-97-bayern-munich-home-soccer-jersey-front.jpg"
+             alt="Retro Bayern Munich 95/97 Home Soccer Jersey"
+             class="camiseta"
+             id="bayern-95-home">
+        <h3>Retro Bayern Munich 95/97 Home Soccer Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Retro%20Bayern%20Munich%2095/97%20Home%20Soccer%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('bayern-95-home',
+        'img/retro-95-97-bayern-munich-home-soccer-jersey-front.jpg',
+        'img/retro-95-97-bayern-munich-home-soccer-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/2025-26-liverpool-home-jersey-front.jpg"
+             alt="2025/26 Liverpool Home Jersey"
+             class="camiseta"
+             id="liverpool-home">
+        <h3>2025/26 Liverpool Home Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%202025/26%20Liverpool%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('liverpool-home',
+        'img/2025-26-liverpool-home-jersey-front.jpg',
+        'img/2025-26-liverpool-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img src="img/player-25-26-liverpool-third-jersey-front.jpg"
+             alt="Player Version 25/26 Liverpool Third Jersey"
+             class="camiseta"
+             id="liverpool-third">
+        <h3>Player Version 25/26 Liverpool Third Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Liverpool%20Third%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('liverpool-third',
+        'img/player-25-26-liverpool-third-jersey-front.jpg',
+        'img/player-25-26-liverpool-third-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+    <div class="producto">
+        <img src="img/player-25-26-liverpool-away-white-jersey-front.jpg"
+             alt="Player Version 25/26 Liverpool Away White Jersey"
+             class="camiseta"
+             id="liverpool-away-white">
+        <h3>Player Version 25/26 Liverpool Away White Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Liverpool%20Away%20White%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('liverpool-away-white',
+        'img/player-25-26-liverpool-away-white-jersey-front.jpg',
+        'img/player-25-26-liverpool-away-white-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/2025-26-newcastle-united-home-jersey-front.jpg"
+             alt="2025/26 Newcastle United Home Jersey"
+             class="camiseta"
+             id="newcastle-home">
+        <h3>2025/26 Newcastle United Home Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%202025/26%20Newcastle%20United%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('newcastle-home',
+        'img/2025-26-newcastle-united-home-jersey-front.jpg',
+        'img/2025-26-newcastle-united-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-2025-26-newcastle-united-away-jersey-front.jpg"
+             alt="Player Version 2025/26 Newcastle United Away Jersey"
+             class="camiseta"
+             id="newcastle-away">
+        <h3>Player Version 2025/26 Newcastle United Away Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%202025/26%20Newcastle%20United%20Away%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('newcastle-away',
+        'img/player-2025-26-newcastle-united-away-jersey-front.jpg',
+        'img/player-2025-26-newcastle-united-away-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-manchester-united-home-jersey-front.jpg"
+             alt="Player Version 25/26 Manchester United Home Jersey"
+             class="camiseta"
+             id="manu-home">
+        <h3>Player Version 25/26 Manchester United Home Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Manchester%20United%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('manu-home',
+        'img/player-25-26-manchester-united-home-jersey-front.jpg',
+        'img/player-25-26-manchester-united-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-manchester-united-away-jersey-front.jpg"
+             alt="Player Version 25/26 Manchester United Away Jersey"
+             class="camiseta"
+             id="manu-away">
+        <h3>Player Version 25/26 Manchester United Away Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Manchester%20United%20Away%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('manu-away',
+        'img/player-25-26-manchester-united-away-jersey-front.jpg',
+        'img/player-25-26-manchester-united-away-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/24-25-manchester-united-adidas-originals-black-training-jersey-front.jpg"
+             alt="24/25 Manchester United Adidas Originals Black Training Jersey"
+             class="camiseta"
+             id="manu-black-training">
+        <h3>24/25 Manchester United Adidas Originals Black Training Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2024/25%20Manchester%20United%20Adidas%20Originals%20Black%20Training%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('manu-black-training',
+        'img/24-25-manchester-united-adidas-originals-black-training-jersey-front.jpg',
+        'img/24-25-manchester-united-adidas-originals-black-training-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/24-25-manchester-united-cotton-beige-t-shirt-jersey-front.jpg"
+             alt="24/25 Manchester United Cotton Beige T-shirt Jersey"
+             class="camiseta"
+             id="manu-beige-tshirt">
+        <h3>24/25 Manchester United Cotton Beige T-shirt Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2024/25%20Manchester%20United%20Cotton%20Beige%20T-shirt%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('manu-beige-tshirt',
+        'img/24-25-manchester-united-cotton-beige-t-shirt-jersey-front.jpg',
+        'img/24-25-manchester-united-cotton-beige-t-shirt-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-arsenal-home-jersey-front.jpg"
+             alt="Player Version 25/26 Arsenal Home Jersey"
+             class="camiseta"
+             id="arsenal-home">
+        <h3>Player Version 25/26 Arsenal Home Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Arsenal%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('arsenal-home',
+        'img/player-25-26-arsenal-home-jersey-front.jpg',
+        'img/player-25-26-arsenal-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-arsenal-away-jersey-front.jpg"
+             alt="Player Version 25/26 Arsenal Away Jersey"
+             class="camiseta"
+             id="arsenal-away">
+        <h3>Player Version 25/26 Arsenal Away Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Arsenal%20Away%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('arsenal-away',
+        'img/player-25-26-arsenal-away-jersey-front.jpg',
+        'img/player-25-26-arsenal-away-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-arsenal-away-white-jersey-front.jpg"
+             alt="Player Version 25/26 Arsenal Away White Jersey"
+             class="camiseta"
+             id="arsenal-away-white">
+        <h3>Player Version 25/26 Arsenal Away White Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Arsenal%20Away%20White%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('arsenal-away-white',
+        'img/player-25-26-arsenal-away-white-jersey-front.jpg',
+        'img/player-25-26-arsenal-away-white-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-manchester-city-home-jersey-front.jpg"
+             alt="Player Version 25/26 Manchester City Home Jersey"
+             class="camiseta"
+             id="mancity-home">
+        <h3>Player Version 25/26 Manchester City Home Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Manchester%20City%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('mancity-home',
+        'img/player-25-26-manchester-city-home-jersey-front.jpg',
+        'img/player-25-26-manchester-city-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-manchester-city-home-long-sleeve-jersey-front.jpg"
+             alt="Player Version 25/26 Manchester City Home Long Sleeve Jersey"
+             class="camiseta"
+             id="mancity-home-ls">
+        <h3>Player Version 25/26 Manchester City Home Long Sleeve Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Manchester%20City%20Home%20Long%20Sleeve%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('mancity-home-ls',
+        'img/player-25-26-manchester-city-home-long-sleeve-jersey-front.jpg',
+        'img/player-25-26-manchester-city-home-long-sleeve-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-manchester-city-away-jersey-front.jpg"
+             alt="Player Version 25/26 Manchester City Away Jersey"
+             class="camiseta"
+             id="mancity-away">
+        <h3>Player Version 25/26 Manchester City Away Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Manchester%20City%20Away%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('mancity-away',
+        'img/player-25-26-manchester-city-away-jersey-front.jpg',
+        'img/player-25-26-manchester-city-away-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-manchester-city-black-concept-jersey-front.jpg"
+             alt="Player Version 25/26 Manchester City Black Concept Jersey"
+             class="camiseta"
+             id="mancity-black-concept">
+        <h3>Player Version 25/26 Manchester City Black Concept Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Manchester%20City%20Black%20Concept%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('mancity-black-concept',
+        'img/player-25-26-manchester-city-black-concept-jersey-front.jpg',
+        'img/player-25-26-manchester-city-black-concept-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/2025-26-chelsea-home-jersey-front.jpg"
+             alt="2025/26 Chelsea Home Jersey"
+             class="camiseta"
+             id="chelsea-home">
+        <h3>2025/26 Chelsea Home Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%202025/26%20Chelsea%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('chelsea-home',
+        'img/2025-26-chelsea-home-jersey-front.jpg',
+        'img/2025-26-chelsea-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-chelsea-away-jersey-front.jpg"
+             alt="Player Version 25/26 Chelsea Away Jersey"
+             class="camiseta"
+             id="chelsea-away">
+        <h3>Player Version 25/26 Chelsea Away Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Chelsea%20Away%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('chelsea-away',
+        'img/player-25-26-chelsea-away-jersey-front.jpg',
+        'img/player-25-26-chelsea-away-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-chelsea-home-long-sleeve-jersey-front.jpg"
+             alt="Player Version 25/26 Chelsea Home Long Sleeve Jersey"
+             class="camiseta"
+             id="chelsea-home-ls">
+        <h3>Player Version 25/26 Chelsea Home Long Sleeve Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Chelsea%20Home%20Long%20Sleeve%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('chelsea-home-ls',
+        'img/player-25-26-chelsea-home-long-sleeve-jersey-front.jpg',
+        'img/player-25-26-chelsea-home-long-sleeve-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-chelsea-away-long-sleeve-jersey-front.jpg"
+             alt="Player Version 25/26 Chelsea Away Long Sleeve"
+             class="camiseta"
+             id="chelsea-away-ls">
+        <h3>Player Version 25/26 Chelsea Away Long Sleeve</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Chelsea%20Away%20Long%20Sleeve">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('chelsea-away-ls',
+        'img/player-25-26-chelsea-away-long-sleeve-jersey-front.jpg',
+        'img/player-25-26-chelsea-away-long-sleeve-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-chelsea-blue-yellow-accents-jersey-front.jpg"
+             alt="Player Version 25/26 Chelsea Blue with Yellow Accents Jersey"
+             class="camiseta"
+             id="chelsea-blue-yellow">
+        <h3>Player Version 25/26 Chelsea Blue with Yellow Accents Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Chelsea%20Blue%20with%20Yellow%20Accents%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('chelsea-blue-yellow',
+        'img/player-25-26-chelsea-blue-yellow-accents-jersey-front.jpg',
+        'img/player-25-26-chelsea-blue-yellow-accents-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-tottenham-hotspur-home-jersey-front.jpg"
+             alt="25/26 Tottenham Hotspur Home Jersey"
+             class="camiseta"
+             id="tottenham-home">
+        <h3>25/26 Tottenham Hotspur Home Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2025/26%20Tottenham%20Hotspur%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('tottenham-home',
+        'img/player-25-26-tottenham-hotspur-home-jersey-front.jpg',
+        'img/player-25-26-tottenham-hotspur-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-tottenham-hotspur-home-long-sleeve-jersey-front.jpg"
+             alt="Player Version 25/26 Tottenham Hotspur Home Long Sleeve Jersey"
+             class="camiseta"
+             id="tottenham-home-ls">
+        <h3>Player Version 25/26 Tottenham Hotspur Home Long Sleeve Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Tottenham%20Hotspur%20Home%20Long%20Sleeve%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('tottenham-home-ls',
+        'img/player-25-26-tottenham-hotspur-home-long-sleeve-jersey-front.jpg',
+        'img/player-25-26-tottenham-hotspur-home-long-sleeve-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-tottenham-hotspur-away-navy-jersey-front.jpg"
+             alt="Player Version 25/26 Tottenham Hotspur Away Navy Jersey"
+             class="camiseta"
+             id="tottenham-away-navy">
+        <h3>Player Version 25/26 Tottenham Hotspur Away Navy Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Tottenham%20Hotspur%20Away%20Navy%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('tottenham-away-navy',
+        'img/player-25-26-tottenham-hotspur-away-navy-jersey-front.jpg',
+        'img/player-25-26-tottenham-hotspur-away-navy-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-tottenham-hotspur-away-navy-long-sleeve-jersey-front.jpg"
+             alt="Player Version 25/26 Tottenham Hotspur Away Navy Long Sleeve Jersey"
+             class="camiseta"
+             id="tottenham-away-navy-ls">
+        <h3>Player Version 25/26 Tottenham Hotspur Away Navy Long Sleeve Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Tottenham%20Hotspur%20Away%20Navy%20Long%20Sleeve%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('tottenham-away-navy-ls',
+        'img/player-25-26-tottenham-hotspur-away-navy-long-sleeve-jersey-front.jpg',
+        'img/player-25-26-tottenham-hotspur-away-navy-long-sleeve-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/25-26-atletico-madrid-home-jersey-front.jpg"
+             alt="25/26 Atlético Madrid Home Jersey"
+             class="camiseta"
+             id="atletico-home">
+        <h3>25/26 Atlético Madrid Home Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2025/26%20Atlético%20Madrid%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('atletico-home',
+        'img/25-26-atletico-madrid-home-jersey-front.jpg',
+        'img/25-26-atletico-madrid-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-atletico-madrid-home-long-sleeve-jersey-front.jpg"
+             alt="Player Version 2025/26 Atlético Madrid Home Long Sleeve Jersey"
+             class="camiseta"
+             id="atletico-home-ls">
+        <h3>Player Version 2025/26 Atlético Madrid Home Long Sleeve Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%202025/26%20Atlético%20Madrid%20Home%20Long%20Sleeve%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('atletico-home-ls',
+        'img/player-25-26-atletico-madrid-home-long-sleeve-jersey-front.jpg',
+        'img/player-25-26-atletico-madrid-home-long-sleeve-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/25-26-atletico-madrid-away-jersey-front.jpg"
+             alt="25/26 Atlético Madrid Away Jersey"
+             class="camiseta"
+             id="atletico-away">
+        <h3>25/26 Atlético Madrid Away Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2025/26%20Atlético%20Madrid%20Away%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('atletico-away',
+        'img/25-26-atletico-madrid-away-jersey-front.jpg',
+        'img/25-26-atletico-madrid-away-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-atletico-madrid-away-blue-long-sleeve-jersey-front.jpg"
+             alt="Player Version 25/26 Atlético Madrid Away Blue Long Sleeve Jersey"
+             class="camiseta"
+             id="atletico-away-ls">
+        <h3>Player Version 25/26 Atlético Madrid Away Blue Long Sleeve Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Atlético%20Madrid%20Away%20Blue%20Long%20Sleeve%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('atletico-away-ls',
+        'img/player-25-26-atletico-madrid-away-blue-long-sleeve-jersey-front.jpg',
+        'img/player-25-26-atletico-madrid-away-blue-long-sleeve-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-barcelona-home-long-sleeve-jersey-front.jpg"
+             alt="Player Version 25/26 Barcelona Home Long Sleeve Jersey"
+             class="camiseta"
+             id="barcelona-home-ls">
+        <h3>Player Version 25/26 Barcelona Home Long Sleeve Jersey</h3>
+        <p class="precio">Precio: $850 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20Barcelona%20Home%20Long%20Sleeve%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('barcelona-home-ls',
+        'img/player-25-26-barcelona-home-long-sleeve-jersey-front.jpg',
+        'img/player-25-26-barcelona-home-long-sleeve-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/player-25-26-barcelona-pink-white-diagonal-stripe-jersey-front.jpg"
+             alt="Player Version 25/26 FC Barcelona Pink White with Diagonal Stripe Pattern Jersey"
+             class="camiseta"
+             id="barcelona-diagonal">
+        <h3>Player Version 25/26 FC Barcelona Pink White with Diagonal Stripe Pattern Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Player%20Version%2025/26%20FC%20Barcelona%20Pink%20White%20with%20Diagonal%20Stripe%20Pattern%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('barcelona-diagonal',
+        'img/player-25-26-barcelona-pink-white-diagonal-stripe-jersey-front.jpg',
+        'img/player-25-26-barcelona-pink-white-diagonal-stripe-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/25-26-barcelona-pink-special-jersey-front.jpg"
+             alt="25/26 Barcelona Pink Special Jersey"
+             class="camiseta"
+             id="barcelona-pink-special">
+        <h3>25/26 Barcelona Pink Special Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2025/26%20Barcelona%20Pink%20Special%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('barcelona-pink-special',
+        'img/25-26-barcelona-pink-special-jersey-front.jpg',
+        'img/25-26-barcelona-pink-special-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/25-26-real-betis-home-jersey-front.jpg"
+             alt="25/26 Real Betis Home Jersey"
+             class="camiseta"
+             id="betis-home">
+        <h3>25/26 Real Betis Home Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2025/26%20Real%20Betis%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('betis-home',
+        'img/25-26-real-betis-home-jersey-front.jpg',
+        'img/25-26-real-betis-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/25-26-real-betis-special-edition-jersey-front.jpg"
+             alt="25/26 Real Betis Special Edition"
+             class="camiseta"
+             id="betis-special">
+        <h3>25/26 Real Betis Special Edition</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2025/26%20Real%20Betis%20Special%20Edition">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('betis-special',
+        'img/25-26-real-betis-special-edition-jersey-front.jpg',
+        'img/25-26-real-betis-special-edition-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/retro-96-97-real-betis-home-jersey-front.jpg"
+             alt="Retro Real Betis 96/97 Home Soccer Jersey"
+             class="camiseta"
+             id="betis-retro">
+        <h3>Retro Real Betis 96/97 Home Soccer Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%20Retro%20Real%20Betis%2096/97%20Home%20Soccer%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('betis-retro',
+        'img/retro-96-97-real-betis-home-jersey-front.jpg',
+        'img/retro-96-97-real-betis-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/2025-pio-fc-home-jersey-front.jpg"
+             alt="2025 PIO FC Home"
+             class="camiseta"
+             id="pio-home">
+        <h3>2025 PIO FC Home</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%202025%20PIO%20FC%20Home">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('pio-home',
+        'img/2025-pio-fc-home-jersey-front.jpg',
+        'img/2025-pio-fc-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/24-25-kings-league-xbuyer-blue-jersey-front.jpg"
+             alt="24/25 Kings League XBuyer Team Blue Jersey"
+             class="camiseta"
+             id="xbuyer-blue">
+        <h3>24/25 Kings League XBuyer Team Blue Jersey</h3>
+        <p class="precio">Precio: $700 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2024/25%20Kings%20League%20XBuyer%20Team%20Blue%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('xbuyer-blue',
+        'img/24-25-kings-league-xbuyer-blue-jersey-front.jpg',
+        'img/24-25-kings-league-xbuyer-blue-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/24-25-kings-league-peluche-caligari-home-jersey-front.jpg"
+             alt="24/25 Kings League Peluche Caligari Home Jersey"
+             class="camiseta"
+             id="peluche-home">
+        <h3>24/25 Kings League Peluche Caligari Home Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <p class="tallas">Tallas disponibles: S, M, L, XL, XXL</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2024/25%20Kings%20League%20Peluche%20Caligari%20Home%20Jersey%20en%20talla%3A">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('peluche-home',
+        'img/24-25-kings-league-peluche-caligari-home-jersey-front.jpg',
+        'img/24-25-kings-league-peluche-caligari-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/24-25-kings-league-pio-fc-home-jersey-front.jpg"
+             alt="24/25 Kings League PIO FC Home Jersey"
+             class="camiseta"
+             id="pio-24-home">
+        <h3>24/25 Kings League PIO FC Home Jersey</h3>
+        <p class="precio">Precio: $700 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2024/25%20Kings%20League%20PIO%20FC%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('pio-24-home',
+        'img/24-25-kings-league-pio-fc-home-jersey-front.jpg',
+        'img/24-25-kings-league-pio-fc-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/24-25-kings-league-cuervos-home-jersey-front.jpg"
+             alt="4/25 Kings League Cuervos Home Jersey"
+             class="camiseta"
+             id="cuervos-home">
+        <h3>4/25 Kings League Cuervos Home Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%204/25%20Kings%20League%20Cuervos%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('cuervos-home',
+        'img/24-25-kings-league-cuervos-home-jersey-front.jpg',
+        'img/24-25-kings-league-cuervos-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/24-25-kings-league-saiyans-orange-jersey-front.jpg"
+             alt="24/25 Kings League Saiyans FC Orange Jersey"
+             class="camiseta"
+             id="saiyans-orange">
+        <h3>24/25 Kings League Saiyans FC Orange Jersey</h3>
+        <p class="precio">Precio: $800 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2024/25%20Kings%20League%20Saiyans%20FC%20Orange%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('saiyans-orange',
+        'img/24-25-kings-league-saiyans-orange-jersey-front.jpg',
+        'img/24-25-kings-league-saiyans-orange-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/24-25-kings-league-aniquiladores-home-jersey-front.jpg"
+             alt="24/25 Kings League Aniquiladores FC Home Jersey"
+             class="camiseta"
+             id="aniquiladores-home">
+        <h3>24/25 Kings League Aniquiladores FC Home Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2024/25%20Kings%20League%20Aniquiladores%20FC%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('aniquiladores-home',
+        'img/24-25-kings-league-aniquiladores-home-jersey-front.jpg',
+        'img/24-25-kings-league-aniquiladores-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/24-25-kings-league-el-barrio-home-jersey-front.jpg"
+             alt="24/25 Kings League El Barrio Home Jersey"
+             class="camiseta"
+             id="el-barrio-home">
+        <h3>24/25 Kings League El Barrio Home Jersey</h3>
+        <p class="precio">Precio: $750 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2024/25%20Kings%20League%20El%20Barrio%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('el-barrio-home',
+        'img/24-25-kings-league-el-barrio-home-jersey-front.jpg',
+        'img/24-25-kings-league-el-barrio-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/22-23-saiyans-fc-2-split-home-jersey-front.jpg"
+             alt="22/23 Saiyans FC 2 Split Home Jersey"
+             class="camiseta"
+             id="saiyans-2split-home">
+        <h3>22/23 Saiyans FC 2 Split Home Jersey</h3>
+        <p class="precio">Precio: $600 MXN</p>
+        <div class="botones">
+            <a href="https://wa.me/523339724151?text=Hola,%20quiero%20comprar%20la%2022/23%20Saiyans%20FC%202%20Split%20Home%20Jersey">
+                <button class="boton-icono">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="ws-icon">
+                </button>
+            </a>
+            <button class="secundario"
+                    onclick="cambiarPerspectiva('saiyans-2split-home',
+        'img/22-23-saiyans-fc-2-split-home-jersey-front.jpg',
+        'img/22-23-saiyans-fc-2-split-home-jersey-back.jpg')">
+                Cambiar Perspectiva
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+<script>
+    function cambiarPerspectiva(id, front, back) {
+        const img = document.getElementById(id);
+        img.src = img.src.includes(front) ? back : front;
+    }
+
+    function filtrarCatalogo() {
+        const input = document.getElementById("searchInput").value.toLowerCase();
+        const productos = document.getElementsByClassName("producto");
+
+        for (let i = 0; i < productos.length; i++) {
+            const nombre = productos[i].querySelector("h3").textContent.toLowerCase();
+            productos[i].style.display = nombre.includes(input) ? "" : "none";
         }
-        function filtrarCatalogo() {
-            const input = document.getElementById("searchInput").value.toLowerCase();
-            const productos = document.getElementsByClassName("producto");
-            for (let i = 0; i < productos.length; i++) {
-                const nombre = productos[i].querySelector("h3").textContent.toLowerCase();
-                productos[i].style.display = nombre.includes(input) ? "" : "none";
-            }
-        }
-    </script>
+    }
+</script>
 </body>
 </html>

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Catálogo Gol de Época</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="img/logo.jpg" alt="Gol de Época Logo" class="logo" />
+        <h1>Catálogo Gol de Época</h1>
+        <p>Pasión que nunca pasa de moda</p>
+    </header>
+
+    <div class="buscador">
+        <input type="text" id="searchInput" placeholder="Buscar camiseta..." onkeyup="filtrarCatalogo()" />
+    </div>
+
+    <section class="catalogo">
+        <div class="producto" data-name="25/26 Liverpool Home Jersey" data-price="750">
+            <img src="img/25-26-liverpool-home-jersey-front.jpg" alt="25/26 Liverpool Home Jersey" class="camiseta" id="liverpool-home" />
+            <h3>25/26 Liverpool Home Jersey</h3>
+            <p class="precio">Precio: $750 MXN</p>
+            <div class="botones">
+                <button class="agregar-carrito">Agregar al carrito</button>
+                <button class="secundario" onclick="cambiarPerspectiva('liverpool-home','img/25-26-liverpool-home-jersey-front.jpg','img/25-26-liverpool-home-jersey-back.jpg')">
+                    Cambiar Perspectiva
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div id="cartPopup" class="cart-popup">
+        <h2>🛒 Carrito de Compras</h2>
+        <ul id="cartItems"></ul>
+        <p id="totalAmount">Total: $0 MXN</p>
+        <p id="shippingNotice"></p>
+        <a id="checkoutBtn" href="#" target="_blank">
+            <button class="checkout-btn">Pedir por WhatsApp</button>
+        </a>
+    </div>
+
+    <button id="toggleCartBtn" class="toggle-cart-btn">🛒</button>
+
+    <script>
+        function cambiarPerspectiva(id, front, back) {
+            const img = document.getElementById(id);
+            img.src = img.src.includes(front) ? back : front;
+        }
+        function filtrarCatalogo() {
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const productos = document.getElementsByClassName("producto");
+            for (let i = 0; i < productos.length; i++) {
+                const nombre = productos[i].querySelector("h3").textContent.toLowerCase();
+                productos[i].style.display = nombre.includes(input) ? "" : "none";
+            }
+        }
+    </script>
+</body>
+</html>
